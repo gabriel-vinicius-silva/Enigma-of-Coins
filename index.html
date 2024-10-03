@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>🎮 Adivinhe o Número 🎮</title>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Adivinhe o Número 🎮</h1>
+        <div id="coins-display">💰 Moedas: 50</div>
+        
+        <input type="number" id="min" placeholder="Número Mínimo" required>
+        <input type="number" id="max" placeholder="Número Máximo" required>
+        
+        <button onclick="startGame()">Iniciar Jogo</button>
+        
+        <div id="game-section" style="display: none;">
+            <input type="number" id="guess" placeholder="Adivinhe o Número" required>
+            <button onclick="makeGuess()">Fazer Tentativa</button>
+        </div>
+        
+        <div id="message-container"></div>
+        
+        <div id="attempts-container">
+            <h3>Tentativas:</h3>
+            <ul id="attempts-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
